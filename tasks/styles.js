@@ -40,7 +40,7 @@ function stylesTask() {
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle}))
     .pipe(autoprefixer())
-    .pipe(rename('mn-radio.css'))
+    .pipe(rename('mn-checkbox.css'))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.styles.dest))
     .pipe(browserSync.stream({match: '**/*.css'}));

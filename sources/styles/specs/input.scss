@@ -23,6 +23,7 @@ mn-number {
     transition: box-shadow .2s ease;
     text-overflow: ellipsis;
     user-select: none;
+    background-color: transparent;
 
     &::-webkit-inner-spin-button,
     &::-webkit-outer-spin-button {
@@ -55,21 +56,20 @@ mn-number {
   }
 }
 
-mn-radio {
+mn-checkbox {
   position: relative;
   margin: 2.5em .1em 0;
   height: 2em;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+  padding-bottom: .5em;
 
   input {
     display: none;
   }
 
-  label:hover input {
-    & + .radio {
-      background: map-get($mn-primary-color, 400);
+  input:checked {
+    & + .checkbox {
+      background: map-get($mn-primary-color, 900);
 
       &:before {
         left: calc(100% - 1.8em);
@@ -77,7 +77,7 @@ mn-radio {
     }
   }
 
-  .radio {
+  .checkbox {
     display: inline-block;
     width: 3.5em; height: 2em;
     position: relative;

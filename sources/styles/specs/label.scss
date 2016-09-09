@@ -31,3 +31,19 @@ mn-number {
     transform: translate(0, -1.3em) scale(.8) translateZ(0);
   }
 }
+
+mn-checkbox {
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+
+    span {
+      display: inline-block;
+      flex: auto;
+      padding-right: 1em;
+      user-select: none;
+    }
+  }
+}
