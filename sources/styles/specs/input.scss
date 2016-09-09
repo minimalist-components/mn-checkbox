@@ -1,0 +1,101 @@
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder {@content}
+  &::-moz-placeholder {@content}
+  &:-ms-input-placeholder {@content}
+}
+
+mn-number {
+  position: relative;
+  display: inline-block;
+  margin: 2.5em .1em 0;
+
+  input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    line-height: 2em;
+    font-size: 1em;
+    box-sizing: border-box;
+    padding: 0 .1em;
+    margin-bottom: .5em;
+    box-shadow: 0 1px 0 map-get($mn-black-color, 200);
+    transition: box-shadow .2s ease;
+    text-overflow: ellipsis;
+    user-select: none;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    @include placeholder {
+      color: transparent;
+      pointer-events: none;
+    }
+
+    &[readonly] {
+      pointer-events: none;
+    }
+
+    &:invalid {
+      box-shadow: 0 2px 0 map-get($mn-warning-color, 400);
+    }
+
+    &:focus {
+      box-shadow: 0 2px 0 map-get($mn-primary-color, 900);
+    }
+
+
+    &:disabled {
+      box-shadow: 0 1px 0 map-get($mn-black-color, 50);
+      color: map-get($mn-primary-color, 200);
+    }
+  }
+}
+
+mn-radio {
+  position: relative;
+  margin: 2.5em .1em 0;
+  height: 2em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  input {
+    display: none;
+  }
+
+  label:hover input {
+    & + .radio {
+      background: map-get($mn-primary-color, 400);
+
+      &:before {
+        left: calc(100% - 1.8em);
+      }
+    }
+  }
+
+  .radio {
+    display: inline-block;
+    width: 3.5em; height: 2em;
+    position: relative;
+    border-radius: 1em;
+    background: map-get($mn-black-color, 200);
+    transition: background .2s ease;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 1.6em;
+      height: 1.6em;
+      background: white;
+      position: absolute;;
+      left: .2em; top: 50%;
+      transform: translate(0, -50%);
+      transition: left .2s ease;
+      border-radius: 50%;
+    }
+  }
+}
