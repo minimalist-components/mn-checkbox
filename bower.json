@@ -1,11 +1,11 @@
 {
-  "name": "mn-radio",
+  "name": "mn-checkbox",
   "version": "0.0.1",
-  "description": "Minimalist input radio component, agnostic to framworks",
+  "description": "Minimalist input checkbox component, agnostic to framworks",
   "main": [
-    "dist/mn-radio.css",
-    "dist/mn-radio.js",
-    "sources/styles/mn-radio.scss"
+    "dist/mn-checkbox.css",
+    "dist/mn-checkbox.js",
+    "sources/styles/mn-checkbox.scss"
   ],
   "authors": [
     "Darlan Mendonça <darlanmendonca@gmail.com>"
