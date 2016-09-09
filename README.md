@@ -34,9 +34,5 @@ The following attributes from inputs are supported in this component
 
 - [autofocus](http://www.w3schools.com/tags/att_input_autofocus.asp)
 - [checked](http://www.w3schools.com/tags/att_input_checked.asp)
-<!-- - defaultChecked
-- defaultValue -->
 - [disabled](http://www.w3schools.com/tags/att_input_disabled.asp)
 - [name](http://www.w3schools.com/tags/att_input_name.asp)
-<!-- - required
-- value -->

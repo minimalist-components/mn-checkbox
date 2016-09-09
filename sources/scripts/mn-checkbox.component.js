@@ -13,19 +13,13 @@ function mnCheckbox() {
       default: 'checkbox',
     },
     {
-      name: 'value',
-    },
-    {
       name: 'name',
     },
     {
       name: 'autofocus',
     },
     {
-      name: 'readonly',
-    },
-    {
-      name: 'required',
+      name: 'checked',
     },
     {
       name: 'disabled',
