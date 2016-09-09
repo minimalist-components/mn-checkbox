@@ -26,8 +26,7 @@ Or just download the main files ```dist/mn-radio.css, dist/mn-radio.js``` in you
 And then, in your html, you can use the tag ```mn-radio``` i.e.
 
 ```html
-<mn-radio label="Number"></mn-radio>
-<mn-radio label="Number (with max 10)"></mn-radio>
+<mn-radio label="Status"></mn-radio>
 ```
 
 The following attributes from inputs are supported in this component
