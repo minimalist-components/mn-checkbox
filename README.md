@@ -2,9 +2,9 @@
 
 Minimalist input checkbox component, agnostic to framworks.
 
-<!-- See the [demo](http://codepen.io/darlanmendonca/full/akgXQq)
+See the [demo](http://codepen.io/darlanmendonca/full/xEwkaz)
 
-[![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-checkbox/master/sources/example/mn-checkbox.gif)](http://codepen.io/darlanmendonca/full/akgXQq) -->
+<!-- [![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-checkbox/master/sources/example/mn-checkbox.gif)](http://codepen.io/darlanmendonca/full/akgXQq)  -->
 
 ### Install
 
