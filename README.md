@@ -29,7 +29,12 @@ And then, in your html, you can use the tag ```mn-checkbox``` i.e.
 <mn-checkbox label="Status"></mn-checkbox>
 ```
 
-The following attributes from inputs are supported in this component
+Custom attributes
+
+- label - custom attribute, to define the text visible for checkbox, like example above
+
+The following attributes from input type checkbox are supported in this component
+
 
 - [autofocus](http://www.w3schools.com/tags/att_input_autofocus.asp)
 - [checked](http://www.w3schools.com/tags/att_input_checked.asp)
