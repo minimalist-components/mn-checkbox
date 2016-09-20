@@ -18,7 +18,7 @@ Or just download the main files ```dist/mn-checkbox.css, dist/mn-checkbox.js``` 
 
 ```html
 <link rel="stylesheet" href="path/to/dist/mn-checkbox.css">
-<script src="path/to/dist/mn-checkbox.css"></script>
+<script src="path/to/dist/mn-checkbox.js"></script>
 ```
 
 ### Usage
