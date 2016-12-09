@@ -1,4 +1,4 @@
-# Minimalist input checkbox
+# mn-checkbox
 
 Minimalist input checkbox component, agnostic to framworks.
 
@@ -8,18 +8,11 @@ See the [demo](http://codepen.io/darlanmendonca/full/xEwkaz)
 
 ### Install
 
-With bower
-
 ```sh
 bower install --save mn-checkbox
 ```
 
-Or just download the main files ```dist/mn-checkbox.css, dist/mn-checkbox.js``` in your project, and make a reference to their, like:
-
-```html
-<link rel="stylesheet" href="path/to/dist/mn-checkbox.css">
-<script src="path/to/dist/mn-checkbox.js"></script>
-```
+Or just download the main files, located in [dist/](https://github.com/minimalist-components/mn-checkbox/tree/master/dist)
 
 ### Usage
 
