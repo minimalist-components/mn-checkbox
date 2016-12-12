@@ -1,3 +1,6 @@
+[![Bower version](https://badge.fury.io/bo/mn-checkbox.svg)](https://badge.fury.io/bo/mn-checkbox)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php) 
+
 # mn-checkbox
 
 Minimalist input checkbox component, agnostic to framworks.
