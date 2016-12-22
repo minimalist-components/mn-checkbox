@@ -1,11 +1,9 @@
-'use strict';
-
-let prototype = Object.create(HTMLElement.prototype);
-prototype.createdCallback = mnCheckbox;
-document.registerElement('mn-checkbox', {prototype});
+let prototype = Object.create(HTMLElement.prototype)
+prototype.createdCallback = mnCheckbox
+document.registerElement('mn-checkbox', {prototype})
 
 function mnCheckbox() {
-  let element = this;
+  let element = this
 
   let inputAttributes = [
     {
@@ -24,44 +22,44 @@ function mnCheckbox() {
     {
       name: 'disabled',
     },
-  ];
+  ]
 
   // label element
-  let labelText = element.getAttribute('label');
-  let label = document.createElement('label');
-  let text = document.createElement('span');
+  let labelText = element.getAttribute('label')
+  let label = document.createElement('label')
+  let text = document.createElement('span')
   if (labelText) {
     text.textContent = element.getAttribute('disabled')
       ? `${labelText} disabled`
-      : labelText;
+      : labelText
   }
-  label.appendChild(text);
+  label.appendChild(text)
 
   // input element
-  let input = document.createElement('input');
-  inputAttributes.map(setInputAttribute);
-  label.appendChild(input);
+  let input = document.createElement('input')
+  inputAttributes.map(setInputAttribute)
+  label.appendChild(input)
 
-  let checkbox = document.createElement('div');
-  checkbox.className = 'checkbox';
-  label.appendChild(checkbox);
-  element.appendChild(label);
+  let checkbox = document.createElement('div')
+  checkbox.className = 'checkbox'
+  label.appendChild(checkbox)
+  element.appendChild(label)
 
   function setInputAttribute(attribute) {
-    let isDefaultAttribute = attribute.hasOwnProperty('default');
-    let attributeValue = element.getAttribute(attribute.name);
+    let isDefaultAttribute = attribute.hasOwnProperty('default')
+    let attributeValue = element.getAttribute(attribute.name)
 
     if (isDefaultAttribute) {
       let isValidValue = attribute.hasOwnProperty('values')
-        && attribute.values.indexOf(attributeValue) >= 0;
+        && attribute.values.indexOf(attributeValue) >= 0
 
       let value = isValidValue
         ? attributeValue
-        : attribute.default;
+        : attribute.default
 
-      input.setAttribute(attribute.name, value);
+      input.setAttribute(attribute.name, value)
     } else if (attributeValue) {
-      input.setAttribute(attribute.name, attributeValue);
+      input.setAttribute(attribute.name, attributeValue)
     }
   }
 }
